@@ -1,0 +1,39 @@
+<!--
+  Oppgaver
+  [x] Lag et div element. Gi det klassen flex-container
+  [x] Plasser 4 div elementer inni flex-container. Gi hvert element et nr.
+  [x] Få elementene til å vises horisontalt
+  [x] Sørg for å midtstille elementene
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      .flex-container {
+        background: blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      .flex-container > div {
+        background: white;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <script></script>
+  </body>
+</html>

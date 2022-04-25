@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 1 - Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      body {
+        margin: 0;
+        color: white;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      header {
+        background: #4ec9ed;
+        padding: 2rem;
+      }
+      
+      nav {
+        background: #A3113E;
+        padding: 2rem;
+        width: 15%;
+      }
+      
+      main {
+        background: #ede037;
+        padding: 2rem;
+        flex-grow: 1;
+      }
+      
+      aside {
+        background: #ED1F5D;
+        padding: 2rem;
+        width: 15%;
+      }
+      
+      footer {
+        background: #4ec9ed;
+        padding: 2rem;
+      }
+      
+      .layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+  
+      .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-grow: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header>Header</header>
+      <div class="content">
+        <nav>Sidenav</nav>
+        <main>Main content</main>
+        <aside>Sidebar</aside>
+      </div>
+      <footer>Footer</footer>
+    </div>
+    
+  </body>
+</html>

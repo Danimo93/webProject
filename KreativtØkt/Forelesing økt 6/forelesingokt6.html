@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body{
+        /* Sentrerer innholdet */
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        /*Sørge for at body er 100% høyde */
+        height:100vh;
+        margin:0;
+    }
+    #myBox{
+        background-color: magenta;
+        width: 200px;
+        height: 200px;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        
+
+    }
+    #myBox:hover,fadeout{
+        transform: rotate(720deg);
+        box-shadow: inset 0 0 0 25px cyan;
+        background-color: cornflowerblue;
+        height: 200px;
+        width: 200px;
+    }
+
+</style>
+<body>
+    <div id="myBox">My box</div>
+</body>
+</html>

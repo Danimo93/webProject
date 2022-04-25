@@ -1,0 +1,67 @@
+<!--
+
+  [] Posisjoner et element i midten av siden med flexbox
+  [] Posisjoner et element i midten av siden med absolutt posisjon
+  [x] Sett inn et bilde. Sørg for at bildet skalerer.
+  [] Plasser noe inne i bildet som er på samme posisjon når skjermen skalerer
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        border: 1px solid red;
+        /*
+        background-image: url(images/strand-himmel.jpg);
+        background-position: top;
+        background-size: cover;
+        */
+      }
+      
+      .beach {
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      .sun {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 10%;
+      }
+      
+      .startLink {
+        display: block;
+        background: red;
+        color: white;
+        padding: 1rem;
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .startLink:hover {
+        transform: scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/sol.png" alt="" class="sun" />
+      <a href="side2.html" class="startLink">START HER!!!!!</a>
+      <img src="images/strand-himmel.jpg" alt="" class="beach" />
+    </div>
+    
+  </body>
+</html>

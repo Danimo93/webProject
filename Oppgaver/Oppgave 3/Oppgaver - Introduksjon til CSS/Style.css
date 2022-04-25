@@ -1,0 +1,55 @@
+body{
+    background-color: lightgray;
+}
+header{
+    background-color: midnightblue;
+    padding: 50px;
+    margin-bottom: 50px;   
+
+}
+h2{
+    font-size: 30px;
+    color: lightblue;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: ghostwhite;
+
+}
+h1, h2{
+    font-weight: sans-serif;
+    font-family: bold;
+}
+main{
+    background-color: white;
+    margin-bottom: -30px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    margin-right: 200px;
+    margin-left: 200px;
+
+}
+img{
+    width:100%;
+}
+
+article{
+    padding: 30px;
+}
+.forfatter{
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+#post1{
+    border-color: lightblue;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+
+
+
+
+

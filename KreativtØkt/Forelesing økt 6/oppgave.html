@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    @keyframes rotateMe {
+        from{
+            transform: rotate(0);
+
+        }to{
+            transform: rotate(360deg);
+        }
+    }
+    .myBox{
+        background-color: magenta;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        animation-name: rotateMe;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+    }
+    #chack:checked ~ .myBox{
+        animation-play-state: running;
+    }
+
+</style>
+<body>
+    Play/Pause<input type="checkbox" value="1" id="chack"/>
+    <div class="myBox">My box</div>
+    <div class="myBox">My box</div>
+    <div class="myBox">My box</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cycling News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Cycling.css">
+        <style>
+        * {
+        box-sizing: border-box;
+        }
+        
+        body {
+        font-family: Helvetica, sans-serif;
+        }
+        /* Header Text */
+        header {
+        background-color: #B60D0D;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        height: auto;
+        }
+
+        /* Create two columns/boxes */
+        nav {
+        float: left;
+        width: 30%;
+        height: 364px;
+        background: #ccc;
+        padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+        padding: 0;
+        height: auto;
+        }
+
+        article {
+        float: right;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 364px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        height: auto;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+        nav, article {
+            width: 90%;
+            height: auto;
+        }
+        }
+        </style>
+        </head>
+        <body>
+        <header>
+        <h2>Cycling News</h2>
+        </header>
+        <section>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="../CyclingAnalytics.html">Home</a></li>
+                <li><a href="CyclingWeekly.html">CyclingWeekly</a></li>
+                <li><a href="Velonews.html">VeloNews</a></li>
+                <li><a class="active"href="CylingSports.html">CycleSport</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Cycle Sport</h1>
+            <p>Cycle Sport was a cycling magazine published 13 times a year by IPC Media. 
+            The magazine was first published in June 1993.[2] It was edited by Robert Garbutt.[3] In July 2016, it was announced that the magazine was to closed down,[4] with the final issue being September 2016.[5] The magazine and Cycling Active were incorporated into Cycling Weekly, which is also published by the same company</p>
+            <a href="https://www.velonews.com/">
+            <img src="../Images/Screenshot 2021-08-27 at 14.46.29.png" alt="Cycling Weekly" width="100" height="130"> &nbsp;</a>
+        </section>
+        <footer>
+        <p>Author: Daniel Peter Mohr</p>
+        </footer>
+
+        </body>
+    </html>

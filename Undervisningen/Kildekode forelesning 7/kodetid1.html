@@ -1,0 +1,90 @@
+<!--
+    [] Animer en båt. Få den til å kjøre på vannet. 
+    [] Legg inn bilde av en øy. Få båten til å krasje.
+    [] Legg inn animasjon av at øyen rister
+
+    Ekstra utfordring
+    [] Animer et fly som krasjer
+    [] Når flyet krasjer, animer en eksplosjon. Bruk bilder.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Båt</title>
+    <style type="text/css">
+      @keyframes boatMe {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: calc(100% - 350px);
+        }
+      }
+      @keyframes tiltBoat {
+        from {
+        }
+        to {
+          transform: rotate(-20deg);
+          bottom: 110px;
+        }
+      }
+      @keyframes shakeIsland {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(10px, 5px);
+        }
+      }
+
+      #ocean {
+        height: 100px;
+        background-color: rgb(49, 126, 161);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #boat {
+        width: 200px;
+        position: absolute;
+        bottom: 80px;
+        animation-name: boatMe, tiltBoat;
+        animation-duration: 5s, 1s;
+        animation-timing-function: linear, ease-out;
+        animation-iteration-count: 1;
+        animation-delay: 0s, 4s;
+        animation-fill-mode: forwards;
+      }
+
+      #island {
+        width: 400px;
+        /* 
+        Hvordan posisjonere elementet relativt. Anbefales ikke 
+        position: relative;
+        top: 200px;
+        left: 550px;
+        */
+
+        position: absolute;
+        right: 20px;
+        bottom: 80px;
+        animation-name: shakeIsland;
+        animation-duration: 200ms;
+        animation-timing-function: linear;
+        animation-iteration-count: 10;
+        animation-delay: 3.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ocean"></div>
+    <img id="island" src="images/island.png" alt="En koselig øy" />
+    <img id="boat" src="images/boat.png" alt="En fet båt" />
+  </body>
+</html>

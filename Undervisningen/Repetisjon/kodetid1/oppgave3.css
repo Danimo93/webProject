@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  border: 10px solid black;
+}
+
+.backgroundImage {
+  width: 100%;
+}
+
+.sunImage {
+  width: 20%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}

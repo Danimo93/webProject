@@ -1,0 +1,79 @@
+<!--
+
+  [] Finn to illustrasjoner på google av noen som løper
+  [] Vi skal lage stafett. La den ene løperen gå til 50% av skjermen. La løper nr 2 løpe resten når løper 1 er fremme.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 1 - Stafett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      
+      .road {
+        position: absolute;
+        top: 50%;
+        background: brown;
+        width: 100%;
+        height: 100px;
+      }
+      
+      .runner {
+        position: absolute;
+        bottom: 10px;
+        width: 150px;
+      }
+      
+      .runner1 {
+        left: 0%;
+        animation-name: runRunner1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-duration: 60s;
+        animation-delay: 0;
+      }
+
+      .runner2 {
+        left: 50%;
+        animation-name: runRunner2;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-duration: 60s;
+        animation-delay: 60s;
+      }
+      
+      @keyframes runRunner1 {
+        from {
+          left: 0%;
+        }
+        to {
+          left: 50%;
+        }
+      }
+      
+      @keyframes runRunner2 {
+        from {
+          left: 50%;
+        }
+        to {
+          left: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="road">
+    <img src="images/runner3.png" alt="kvinne 35" class="runner1 runner" />
+    <img src="images/runner6.png" alt="mann 42" class="runner2 runner"/>
+    </div>
+  </body>
+</html>

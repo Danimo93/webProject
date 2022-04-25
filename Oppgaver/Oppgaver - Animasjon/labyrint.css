@@ -1,0 +1,14 @@
+#labyrinten {
+    position: relative;
+    width: 1000px;
+}
+#helten {
+    position: absolute;
+    width: 150px;
+    z-index: 10;
+    top: 220px;
+
+}
+
+
+

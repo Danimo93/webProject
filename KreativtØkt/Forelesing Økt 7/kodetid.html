@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    @keyframe boatMe {
+    0%{
+        left: 0;{
+        }
+        100% {
+            left: calc(100% - 350px);
+        }
+    }        
+    }
+    #ocean {
+        height: 100%;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #boat{
+        width: 150px;
+        position: absolute;
+        bottom: 80px;
+        animation-name: boatMe;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    #island{
+        width: 400px;
+        position: absolute;
+        right: 20px;
+        bottom: 80px;
+    }
+    
+    
+    </style>
+</head>
+
+<body>
+    <div id="ocean"></div>
+    <img src="http://placehold.it/" alt="Placeholder"/>
+
+</body>
+</html>

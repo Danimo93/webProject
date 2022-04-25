@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    width: 500px;
+    margin: 0 auto; 
+    top: 100px; 
+}
+h1 {
+    font-family: 'sans-serif';
+    text-align: center;
+}
+#bar1, #bar2 {
+    position: absolute;
+    content: " ";
+    height: 30px;
+    border-radius: 10px;
+    
+}
+#bar1 {
+    background-color: #ddd;
+    width: 100%;
+}
+#bar2 {
+    background-color: cadetblue;    
+    width: 10%;
+}
+
+/* Skriv inn din kode under */ 
+

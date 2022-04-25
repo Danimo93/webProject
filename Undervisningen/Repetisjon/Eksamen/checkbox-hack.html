@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    
+      label {
+        background: red;
+        border-radius: 2px;
+        padding: 0.5rem;
+        display: inline-block;
+        cursor: pointer;
+      }
+      #checkbox {
+        font-size: 10px;
+        display: none;
+        
+      }
+      #checkbox:checked {
+        border: 1px solid red;
+        background: red;
+        font-size: 20px;
+      }
+      .smiley2 {
+        position: relative;
+        left: 50%;
+        display: none;
+      }
+      .smiley2 {
+        display: none;
+      }
+      
+      #checkbox:checked ~ .smiley1 { 
+        display: none;
+      }
+      
+      #checkbox:checked ~ .smiley2 { 
+        display: block;
+        transition-property: left;
+        transition-duration: 2s;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <label for="checkbox">Cool?</label>
+    <input type="checkbox" name="hack" id="checkbox">
+    <div class="smiley1">🤓</div>
+    <div class="smiley2">😎</div>
+  </body>
+</html>

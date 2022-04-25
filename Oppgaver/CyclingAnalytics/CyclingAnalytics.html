@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cycling News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Cycling.css">
+        <style>
+        * {
+        box-sizing: border-box;
+        }
+        
+        body {
+        font-family: Helvetica, sans-serif;
+        }
+        /* Header Text */
+        header {
+        background-color: #920606;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        height: auto;
+        }
+
+        /* Create two columns/boxes */
+        nav {
+        float: left;
+        width: 30%;
+        height: 364px;
+        background: #ccc;
+        padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+        padding: 0;
+        height: auto;
+        }
+
+        article {
+        float: right;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 364px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        height: auto;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+        nav, article {
+            width: 90%;
+            height: auto;
+        }
+        }
+        </style>
+    </head>
+    <body>
+    <header>
+    <h2>Cycling News</h2>
+    </header>
+    <section>
+    <nav>
+        <ul class='navigation'>
+            <li><a class="active" href="CyclingAnalytics.html">Home</a></li>
+            <li><a href="Navigation/CyclingWeekly.html">CyclingWeekly</a></li>
+            <li><a href="Navigation/Velonews.html">VeloNews</a></li>
+            <li><a href="Navigation/CylingSports.html">CycleSport</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Welcome To Cycling News</h1>
+        <p>
+            The Cycling News puts you in the centre of the action: 
+            from the iconic summit of the Stelvio to the epic trails of Fort William, Scotland, 
+            everywhere there is pavé or dirt, world-class racing, and pro riders, we will be there bringing you all the action, 
+            essential analysis and unparalleled access every week, every month, and every year.
+        </p>
+    </article>
+    </section>
+    <footer>
+    <p>Author: Daniel Peter Mohr</p>
+    </footer>
+    </body>
+</html>

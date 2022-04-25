@@ -1,0 +1,48 @@
+<!--
+  
+  Oppgaver
+  [x] Lag en sirkel som er rød (border-radius: 100%; (Rund))
+  [] Når du tar musen over sirkelen, gjør den dobbelt så stor.
+  
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: red;
+        color: white;
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+      }
+      
+      #circle:hover {
+        height: 400px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.vg.no" id="circle">VG</a>
+    </div>
+  </body>
+</html>

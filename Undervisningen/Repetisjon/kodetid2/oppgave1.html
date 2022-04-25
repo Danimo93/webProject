@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppgave 1</title>
+    <style type="text/css">
+      /* Layouts by Paul */
+      body {
+        margin: 0;
+      }
+      #track {
+        position: absolute;
+        bottom: 20%;
+        background-color: firebrick;
+        width: 100%;
+        height: 10%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+      #goal {
+        position: absolute;
+        border-left: 5px dashed white;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 25%;
+      }
+      .runner {
+        height: 200%;
+        position: absolute;
+        bottom: 40%;
+      }
+
+      @keyframes runRunner1 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 30%;
+        }
+      }
+
+      #runner1 {
+        left: 0;
+        animation-name: runRunner1, victory;
+        animation-duration: 2s, 500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards, none;
+        animation-iteration-count: 1, 5;
+        animation-delay: 1s, 5s;
+      }
+      /* Animations by Bjarki */
+      @keyframes runRunner2 {
+        from {
+          left: 30%;
+        }
+        to {
+          left: 75%;
+        }
+      }
+      .runner2 {
+        left: 30%;
+        animation-name: runRunner2, victory;
+        animation-duration: 2s, 500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards, none;
+        animation-iteration-count: 1, 5;
+        animation-delay: 2.6s, 4.6s;
+      }
+
+      @keyframes victory {
+        0% {
+          bottom: 40%;
+        }
+        50% {
+          bottom: 70%;
+        }
+        100% {
+          bottom: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML by Jonas -->
+    <div id="track">
+      <div id="goal"></div>
+      <img
+        id="runner1"
+        src="images/runner3.png"
+        alt="Runner 1"
+        class="runner"
+      />
+      <img src="images/runner5.png" alt="Runner 2" class="runner runner2" />
+    </div>
+  </body>
+</html>
